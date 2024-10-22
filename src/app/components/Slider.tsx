@@ -64,14 +64,15 @@ const InfiniteSlider = () => {
                 <Image
                   src={slide.image}
                   alt={slide.title}
-                  width={180}
-                  height={400}
+                  width={1000}
+                  height={1000}
                   quality={100}
-                  className="w-full  object-cover"
+                  className="w-full max-w-[481.33px] max-h-[721.98px]  object-cover"
                 />
-                <div className="absolute bottom-2 left-2 right-2 bg-slate-800 p-4  flex justify-between">
-                  <h3 className="text-xl font-bold">{slide.name}</h3>
-                  <p className="text-sm">{slide.title}</p>
+                <div className="absolute bottom-2 left-2 right-2 text-center bg-slate-800 p-4  flex justify-between">
+                  <h3 className="text-xl font-bold text-amber-400">
+                    {slide.title}
+                  </h3>
                 </div>
               </div>
             </SwiperSlide>

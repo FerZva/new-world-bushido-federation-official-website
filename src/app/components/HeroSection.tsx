@@ -27,10 +27,10 @@ const HeroSection = () => {
         <div className="max-w-[400px]">
           <p className="mb-4">
             <i>
-              "So far Federations is full of Martial Artists a few Fighting
+              &#34;So far Federations is full of Martial Artists a few Fighting
               stars, many Champion in different systems, so far we have been
               able to create a big family with the same beliefs, and the
-              application of Warriors Code."
+              application of Warriors Code&#34;.
             </i>
           </p>
           <div className="flex flex-col">

@@ -1,5 +1,6 @@
 // components/InfiniteSlider.tsx
 import { useRef } from "react";
+import { Swipper as SwiperType } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,7 +10,7 @@ import { slides } from "../services/data";
 import Image from "next/image";
 
 const InfiniteSlider = () => {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   const handlePrev = () => {
     if (swiperRef.current) swiperRef.current.swiper.slidePrev();

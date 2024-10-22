@@ -1,6 +1,6 @@
 // components/InfiniteSlider.tsx
 import { useRef } from "react";
-import { Swipper as SwiperType } from "swiper/types";
+import { Swiper as SwiperCore } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,15 +9,20 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { slides } from "../services/data";
 import Image from "next/image";
 
+type SwiperRef = SwiperCore & {
+  slideNext: () => void;
+  slidePrev: () => void;
+};
+
 const InfiniteSlider = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
+  const swiperRef = useRef<SwiperRef | null>(null);
 
   const handlePrev = () => {
-    if (swiperRef.current) swiperRef.current.swiper.slidePrev();
+    if (swiperRef.current) swiperRef.current.slidePrev();
   };
 
   const handleNext = () => {
-    if (swiperRef.current) swiperRef.current.swiper.slideNext();
+    if (swiperRef.current) swiperRef.current.slideNext();
   };
 
   return (
@@ -48,7 +53,9 @@ const InfiniteSlider = () => {
           slidesPerView={3}
           spaceBetween={30}
           loop={true}
-          ref={swiperRef}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           className="pb-8"
         >
           {slides.map((slide, index) => (

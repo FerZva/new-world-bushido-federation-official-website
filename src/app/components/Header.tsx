@@ -4,7 +4,6 @@ import { pages } from "../services/routes";
 import Image from "next/image";
 import WBFHeaderLogo from "../assets/logo.webp";
 import { FaBagShopping } from "react-icons/fa6";
-import LandingPageButton from "./LandingPageButton";
 
 const Header = () => {
   return (

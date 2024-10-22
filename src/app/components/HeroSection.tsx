@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import HeroCoverPhoto from "../assets/HeroPoster.jpg";
-import Link from "next/link";
 import LandingPageButton from "./LandingPageButton";
 
 const HeroSection = () => {

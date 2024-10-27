@@ -21,4 +21,14 @@ export const pages: Pages[] = [
     pageName: "Memberships",
     pageRoute: "/membership",
   },
+  {
+    id: 5,
+    pageName: "WBF Honduras",
+    pageRoute: "/membership",
+  },
+  {
+    id: 6,
+    pageName: "Pro Martial Arts",
+    pageRoute: "/membership",
+  },
 ];

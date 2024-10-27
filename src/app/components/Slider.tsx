@@ -26,7 +26,7 @@ const InfiniteSlider = () => {
   };
 
   return (
-    <div className="w-full bg-gray-900 text-white py-8">
+    <div className="w-full text-white py-8">
       <div className="container mx-auto px-4">
         {/* Título y botones */}
         <div className="flex justify-between items-center mb-4">

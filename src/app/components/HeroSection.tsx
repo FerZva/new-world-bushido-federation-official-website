@@ -19,7 +19,7 @@ const HeroSection = () => {
       </div>
       <div className="w-full mb-8 p-1 flex justify-between items-center">
         <div>
-          <h2 className="font-extrabold text-[80px] text0-center leading-[70px]">
+          <h2 className="font-extrabold text-[100px] text-center leading-[70px]">
             CHANGE <br />
             YOUR LIFE
           </h2>

@@ -19,8 +19,10 @@ const Header = () => {
         ))}
       </nav>
       <div className="flex items-center">
-        <FaBagShopping className="mx-1" />
-        <button className="mx-1">Get Started</button>
+        <FaBagShopping className="mx-1 text-[20px]" />
+        <button className="mx-1 ml-4 bg-rose-700 px-4 py-2 text-center">
+          Get Started
+        </button>
       </div>
     </header>
   );

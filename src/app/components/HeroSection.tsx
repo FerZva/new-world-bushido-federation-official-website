@@ -15,6 +15,8 @@ const HeroSection = () => {
         <Image
           src={HeroCoverPhoto}
           alt="World Bushido Federation Cover Photo"
+          priority={true}
+          placeholder="blur"
         />
       </div>
       <div className="w-full mb-8 p-1 flex justify-between items-center">

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { pages } from "../services/routes";
+// import { pages } from "../services/routes";
 import Image from "next/image";
 import WBFHeaderLogo from "../assets/logo.webp";
 import { FaBagShopping } from "react-icons/fa6";

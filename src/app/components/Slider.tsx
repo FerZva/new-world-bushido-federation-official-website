@@ -67,7 +67,7 @@ const InfiniteSlider = () => {
                   width={1000}
                   height={1000}
                   quality={100}
-                  className="w-full max-w-[481.33px] max-h-[721.98px]  object-cover"
+                  className="w-full max-w-[481.33px] max-h-[586.55px]  object-cover"
                 />
                 <div className="absolute bottom-2 left-2 right-2 text-center bg-slate-800 p-4  flex justify-between">
                   <h3 className="text-xl font-bold text-amber-400">

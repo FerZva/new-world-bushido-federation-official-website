@@ -4,19 +4,57 @@ import { pages } from "../services/routes";
 import Image from "next/image";
 import WBFHeaderLogo from "../assets/logo.webp";
 import { FaBagShopping } from "react-icons/fa6";
+import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 
 const Header = () => {
   return (
     <header className="w-full flex justify-between px-1 py-2">
-      <div>
+      <Link href="/">
         <Image src={WBFHeaderLogo} alt="World Bushido Federation header logo" />
-      </div>
+      </Link>
       <nav className="flex items-center">
-        {pages.map((pages) => (
+        <Popover __demoMode className="z-[100]">
+          <PopoverButton className="block text-white focus:outline-none data-[active]:text-white data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
+            World Bushido Federation
+          </PopoverButton>
+          <PopoverPanel
+            transition
+            anchor="bottom"
+            className="divide-y z-50 divide-white/5 bg-rose-700 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]"
+          >
+            <div className="p-3">
+              <Link
+                href="/wbfhonduras"
+                className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+              >
+                World Bushido Federation Honduras
+              </Link>
+              <Link
+                href="/committee"
+                className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+              >
+                Committee
+              </Link>
+              <Link
+                href="/about"
+                className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+              >
+                About World Bushido Federation
+              </Link>
+            </div>
+          </PopoverPanel>
+        </Popover>
+        <Link href="/membership" className="mx-3">
+          Memberships
+        </Link>
+        <Link href="/promartialarts" className="mx-3">
+          Pro Martial Arts
+        </Link>
+        {/* {pages.map((pages) => (
           <Link key={pages.id} href={pages.pageRoute} className="mx-2">
             {pages.pageName}
           </Link>
-        ))}
+        ))} */}
       </nav>
       <div className="flex items-center">
         <FaBagShopping className="mx-1 text-[20px]" />

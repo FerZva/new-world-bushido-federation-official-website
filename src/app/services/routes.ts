@@ -24,11 +24,11 @@ export const pages: Pages[] = [
   {
     id: 5,
     pageName: "WBF Honduras",
-    pageRoute: "/membership",
+    pageRoute: "/wbfhonduras",
   },
   {
     id: 6,
     pageName: "Pro Martial Arts",
-    pageRoute: "/membership",
+    pageRoute: "/promartialarts",
   },
 ];

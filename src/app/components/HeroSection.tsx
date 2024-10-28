@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import HeroCoverPhoto from "../assets/HeroPoster.jpg";
 import LandingPageButton from "./LandingPageButton";
-import PopoverComponent from "./PopoverComponent";
 
 const HeroSection = () => {
   return (

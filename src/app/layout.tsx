@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Header from "./components/Header";
 import "./globals.css";
 import Footer from "./components/Footer";
-import PageTransition from "./components/PageTransition";
-import WBFLogo from "./assets/WORLD-BUSHIDO.png";
 
 export const metadata: Metadata = {
   title: "World Bushido Federation",

@@ -53,8 +53,8 @@ const page = () => {
           <Image
             src={WBFLogo}
             alt=""
-            width={200}
-            height={300}
+            width={300}
+            height={400}
             className="m-auto my-8"
           />
         </div>
@@ -62,14 +62,14 @@ const page = () => {
           <h2 className="text-center text-[40px] font-extrabold">
             Our History
           </h2>
-          <p className="px-2 py-4">
+          <p className="px-2 lg:px-8 py-4">
             World Bushido Federation was created due to all the disparity I have
             encountered throughout the different Martial Arts system all over
             the World. There the idea to unify Martial Arts through one
             Federation that would unite all systems by using the Warriors
             Code(Bushido) by teaching it to our students and followers.
           </p>
-          <p className="px-2 py-4">
+          <p className="px-2 lg:px-8 py-4">
             The year was 2007 when this idea came up after watching the rivalry
             between the Martial Arts Schools, listening to the: “Sensei’s”,
             “Sifus”, “Sabonnims”, “Guachannims”, “Soke” telling their students
@@ -78,7 +78,7 @@ const page = () => {
             “bad students” as it all depends on who is teaching, this taught me
             that there is only bad “Teachers”.
           </p>
-          <p className="px-2 py-4">
+          <p className="px-2 lg:px-8 py-4">
             Bushido emphasizes and at the same time negates all written above.
             Since it directs us to: Humility,Integrity, Respect, Humbleness,
             Honesty, Compassion and above all unrelentless Honor. Most of the
@@ -93,7 +93,7 @@ const page = () => {
             all the “Real Grandmasters” to teach those Virtues so we can reach
             the entire Globe.
           </p>
-          <p className="px-2 py-4">
+          <p className="px-2 lg:px-8 py-4">
             Our mission is to spread the message in regards to the “Warriors
             Code” (Bushido) and stick to what we were taught when we began to
             learn Martial Arts, there should be no disparities between us as we
@@ -102,7 +102,7 @@ const page = () => {
             better than anybody. We have different mind sets, yet our goals as
             members of World Bushido Federation should be the same.
           </p>
-          <p className="px-2 py-4">
+          <p className="px-2 lg:px-8 py-4">
             World Bushido Federation plans to be unique all over the Globe, we
             will hold events, tournaments, seminars, always withholding our
             beliefs in the Way of the Warrior as the will of God. As we are

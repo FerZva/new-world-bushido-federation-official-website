@@ -6,13 +6,15 @@ const page = () => {
   return (
     <section className="flex flex-col">
       <div>
-        <h1>Committee of World Bushido Federation</h1>
+        <h1 className="text-[40px] font-extrabold text-center">
+          Committee of World Bushido Federation
+        </h1>
       </div>
       <div className="flex flex-row flex-wrap justify-center">
         {CommitteeMembers.map((committee, index) => (
           <div
             key={index}
-            className="bg-slate-800 max-w-[300px] min-h-[500px] m-10"
+            className="w-full max-w-[300px] min-h-[500px] mx-1 lg:mx-10 my-10"
           >
             <div>
               <Image
@@ -20,12 +22,12 @@ const page = () => {
                 height={300}
                 src={committee.committeePicture}
                 alt="committee member photo"
-                className="rounded-none"
+                className="w-full min-h-[320px] max-h-[320px]"
               />
             </div>
-            <div>
-              <h3>{committee.commiteName}</h3>
-              <h3>{committee.description}</h3>
+            <div className="bg-slate-800 mt-10 p-4 text-center">
+              <h3 className="font-extrabold">{committee.commiteName}</h3>
+              <h3 className="text-amber-400">{committee.description}</h3>
             </div>
           </div>
         ))}

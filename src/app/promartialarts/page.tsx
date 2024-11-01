@@ -9,10 +9,17 @@ const promartialarts = () => {
   return (
     <div className="w-full">
       <div className="flex flex-col md:flex-row items-center">
-        <div className="max-w-[50%] p-4 lg:py-16">
-          <h1 className="text-center text-[80px] font-extrabold mb-8">
+        <div className="max-w-full lg:max-w-[50%] px-2 py-1 lg:p-4 lg:py-16">
+          <h1 className="hidden md:block text-center text-[40px] lg:text-[80px] font-extrabold mb-8">
             PRO MARTIAL ARTS
           </h1>
+          <Image
+            src={proMartialArtsLogo}
+            height={550}
+            width={600}
+            alt="Pro martial arts logo"
+            className="m-auto"
+          />
           <p className="text-left">
             We are an academy dedicated to fostering discipline and excellence
             in martial arts and physical conditioning. Our mission is to
@@ -30,7 +37,7 @@ const promartialarts = () => {
           height={550}
           width={600}
           alt="Pro martial arts logo"
-          className="m-auto"
+          className="m-auto hidden md:block"
         />
       </div>
       <div className="w-full">
@@ -41,13 +48,15 @@ const promartialarts = () => {
           quality={100}
           priority={true}
           alt="Pro Martial Arts Academy Photo"
-          className="w-full"
+          className="px-2 md:px-0 w-full"
         />
       </div>
-      <div className="flex">
-        <div className="max-w-[50%] px-1 lg:px-4">
-          <h2 className="text-[80px] font-extrabold mb-8">Meet our Sensei</h2>
-          <p>
+      <div className="flex flex-col md:flex-row">
+        <div className="max-w-full lg:max-w-[50%] px-1 lg:px-4">
+          <h2 className="text-[40px] lg:text-[80px] font-extrabold mb-8">
+            Meet our Sensei
+          </h2>
+          <p className="pb-4 px-2">
             Sensei Fernando Velasquez is a distinguished martial arts master
             with a Black Belt, IV DAN, in Hawaiian Kenpo and a Black Belt, 1st
             DAN, in American Kenpo, along with a Black Belt in the Hong Gar
@@ -69,13 +78,13 @@ const promartialarts = () => {
             width={1500}
             height={2000}
             alt="Sensei Fernando Velasquez"
-            className="w-[100%]"
+            className="w-[100%] px-2 md:px-0"
           />
         </div>
       </div>
       <div className="mt-8">
         <div className="w-full">
-          <h3 className="text-center text-[80px] font-extrabold">
+          <h3 className="text-left md:text-center text-[40px] lg:text-[80px] font-extrabold px-2">
             Students of Martial Pro Arts
           </h3>
         </div>
@@ -88,7 +97,7 @@ const promartialarts = () => {
                   height={500}
                   width={500}
                   alt="Sudent from Pro Martial Arts Photo"
-                  className="w-[500px] h-[666.41px]"
+                  className="h-[500px] w-[450px] lg:h-[666.41px]"
                 />
               )}
               <div className="text-left max-w-[500px] mt-10 bg-slate-800 p-4">

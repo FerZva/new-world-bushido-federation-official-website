@@ -110,7 +110,9 @@ const page = () => {
             are the “Samurai” of this era.
           </p>
 
-          <p className="px-2 py-4 text-center">Hanshi Jorge Borjas, Ph.D</p>
+          <p className="px-2 py-4 text-center font-extrabold">
+            Hanshi Jorge Borjas, Ph.D
+          </p>
         </div>
       </div>
     </div>

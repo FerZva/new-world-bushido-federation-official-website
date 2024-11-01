@@ -1,3 +1,4 @@
+import { Student } from "../models/types";
 import benefitIcon1 from "../assets/benefitIcon1.png";
 import benefitIcon2 from "../assets/benefitIcon2.png";
 import benefitIcon3 from "../assets/benefitIcon3.png";
@@ -27,6 +28,15 @@ import committee15 from "../assets/committee15.jpeg";
 import committee19 from "../assets/committee19.jpg";
 import committee20 from "../assets/committee20.jpg";
 import committee21 from "../assets/committee2.jpg";
+
+import student1 from "../assets/student1.jpg";
+import student2 from "../assets/student2.jpg";
+import student3 from "../assets/student3.jpg";
+import student4 from "../assets/student4.jpg";
+import student5 from "../assets/student5.jpg";
+import student6 from "../assets/student6.jpg";
+import student7 from "../assets/student7.jpg";
+import student8 from "../assets/student8.jpg";
 
 export const BenefitsData = [
   {
@@ -179,5 +189,62 @@ export const CommitteeMembers = [
     committeePicture: committee19,
     commiteName: "Hanshi GM Ray Torres",
     description: "founder of the Torres Hei Long System",
+  },
+];
+
+export const students: Student[] = [
+  {
+    studentPhoto: student1,
+    studentName: "Jennifer Montserrat Bustillo Córdova",
+    dateOfBirth: "30 de septiembre de 2015",
+    trainingTime: "2 años 7 meses O sea  desde febrero 2022",
+    description: "",
+  },
+  {
+    studentPhoto: student2,
+    studentName: "Hector Santiago Velasquez Gonzalez",
+    dateOfBirth: "Nacio 5 de Octubre de 2020 - 4 años",
+    trainingTime: "Entrena desde : Enero 2022",
+    description:
+      "Cinta Morada en el programa de LITTLE HEROES,  equivalencia cinta amarilla kenpo Kids 1er lugar Ranking  Hondureño 2024 categoria 3 años",
+  },
+  {
+    studentPhoto: student8,
+    studentName: "",
+    dateOfBirth: "14 de Enero 2010",
+    trainingTime: "4 años de entreno",
+    description:
+      "Cinta negra Junior Kenpo, Campeon Nacional del Ranking Hondureño en combates, y Katas",
+  },
+  {
+    studentPhoto: student4,
+    studentName: "Danna Valentina Garay Rubio",
+    dateOfBirth: "8 de Enero 2016",
+    trainingTime: "4 años",
+    description:
+      "Cinta negra Little Heroes con equivalencia en Cinta verde Kids Kenpo",
+  },
+  {
+    studentPhoto: student5,
+    studentName: "Ivanna Maria Garay Rubio",
+    dateOfBirth: "16 de Septiembre de 2018",
+    trainingTime: "3 años",
+    description:
+      "Cinta cafe Little Heroes con equivalencia en Kids Kenpo de cinta. Ah ganado premios en combate de 1er y segundo lugar",
+  },
+  {
+    studentPhoto: student6,
+    studentName: "Gabriel Isaac Narvaez Arrazola",
+    dateOfBirth: "19 de Febrero de 2015",
+    trainingTime: "desde 5 de Enero de 2023",
+    description: "",
+  },
+  {
+    studentPhoto: student7,
+    studentName: "Sensei Ramses Gonzales",
+    dateOfBirth: "1 de Abril 2005",
+    trainingTime: "5 años",
+    description:
+      "Cinta Negra Hawaiian Kenpo, Instructor Kick Boxing, Campeon Centro Americano combate Continuo y puntos, Seleccionado Karate deportivo Honduras, Instructor para PRO MARTIAL ARTS, Campeon Nacional Kick Boxing, curso de Psicoterapia infatil",
   },
 ];

@@ -7,11 +7,11 @@ const HeroSection = () => {
   return (
     <section>
       <div className="p1">
-        <h1 className="font-extrabold text-[80px] text-center">
+        <h1 className="font-extrabold text-[40px] lg:text-[80px] text-center">
           WORLD BUSHIDO FEDERATION
         </h1>
       </div>
-      <div className="w-full p-2">
+      <div className="w-full p-2 md:p-0">
         <Image
           src={HeroCoverPhoto}
           alt="World Bushido Federation Cover Photo"
@@ -19,9 +19,9 @@ const HeroSection = () => {
           placeholder="blur"
         />
       </div>
-      <div className="w-full mb-8 p-1 flex justify-between items-center">
+      <div className="w-full mb-8 p-1 flex flex-col md:flex-row justify-between items-center">
         <div>
-          <h2 className="font-extrabold text-[100px] text-center leading-[70px]">
+          <h2 className="font-extrabold text-[40px] lg:text-[80px] text-center leading-[90px]">
             CHANGE <br />
             YOUR LIFE
           </h2>
@@ -35,12 +35,17 @@ const HeroSection = () => {
               application of Warriors Code&#34;.
             </i>
           </p>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:flex-row justify-center">
             <div className="mb-4">
               <p className="font-bold">Hanshi Jorge Borjas</p>
               <p className="font-bold">CEO & Founder of WBF</p>
             </div>
-            <LandingPageButton description="Get Started" linkTo="/membership" />
+            <div className="m-auto md:m-0">
+              <LandingPageButton
+                description="Get Started"
+                linkTo="/membership"
+              />
+            </div>
           </div>
         </div>
       </div>

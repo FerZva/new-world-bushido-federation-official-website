@@ -7,19 +7,19 @@ const Benefits = () => {
   return (
     <section className="w-full py-20 flex flex-col bg-rose-700">
       <div className="">
-        <h3 className="text-[80px] text-center font-extrabold leading-[70px] mb-8">
+        <h3 className="text-[40px] lg:text-[80px] text-center font-extrabold leading-[70px] mb-8">
           BENEFITS OF <br /> MARTIAL ARTS
         </h3>
       </div>
-      <div className="flex justify-start">
-        <div className="w-full max-w-[800px] ml-8">
+      <div className="flex justify-start flex-col lg:flex-row">
+        <div className="w-full max-w-[800px] ml-0 lg:ml-8 mb-4 lg:mb-0">
           <Image
             src={BenefitIlustration}
             alt="Martial Arts Student"
-            className="w-full"
+            className="w-full px-1"
           />
         </div>
-        <div className="text-left flex flex-col ml-28">
+        <div className="text-left flex flex-col ml-1 lg:ml-28">
           {BenefitsData.map((card, index) => (
             <div key={index} className="max-w-[500px] mb-10">
               <div>

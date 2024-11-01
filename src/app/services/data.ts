@@ -209,7 +209,7 @@ export const students: Student[] = [
   },
   {
     studentPhoto: student8,
-    studentName: "",
+    studentName: "Fredy Orlando Almendares Godoy",
     dateOfBirth: "14 de Enero 2010",
     trainingTime: "4 años de entreno",
     description:

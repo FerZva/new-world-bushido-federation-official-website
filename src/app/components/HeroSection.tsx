@@ -21,7 +21,7 @@ const HeroSection = () => {
       </div>
       <div className="w-full mb-8 p-1 flex flex-col md:flex-row justify-between items-center">
         <div>
-          <h2 className="font-extrabold text-[40px] lg:text-[80px] text-center leading-[90px]">
+          <h2 className="font-extrabold text-[40px] lg:text-[80px] text-center leading-[50px] md:leading-[90px]">
             CHANGE <br />
             YOUR LIFE
           </h2>

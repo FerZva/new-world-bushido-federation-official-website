@@ -31,7 +31,6 @@ import committee21 from "../assets/committee2.jpg";
 
 import student1 from "../assets/student1.jpg";
 import student2 from "../assets/student2.jpg";
-import student3 from "../assets/student3.jpg";
 import student4 from "../assets/student4.jpg";
 import student5 from "../assets/student5.jpg";
 import student6 from "../assets/student6.jpg";

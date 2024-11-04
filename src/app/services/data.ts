@@ -4,12 +4,7 @@ import benefitIcon2 from "../assets/benefitIcon2.png";
 import benefitIcon3 from "../assets/benefitIcon3.png";
 import { SocialMediaIcon } from "../models/interface";
 import { RiInstagramFill } from "react-icons/ri";
-import {
-  FaYoutube,
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaYoutube, FaFacebookSquare, FaTiktok } from "react-icons/fa";
 
 import Karate from "../assets/Karate.jpg";
 import Box from "../assets/Box.jpg";

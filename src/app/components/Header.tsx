@@ -31,8 +31,12 @@ const Header = () => {
         </Link>
         <nav className="flex items-center">
           <Popover className="z-[100]">
-            <PopoverButton className="block text-white focus:outline-none data-[active]:text-white data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
-              World Bushido Federation
+            <PopoverButton
+              className="flex items-center text-white focus:outline-none data-[active]:text-white data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white"
+              onClick={handleCollapse}
+            >
+              World Bushido Federation&nbsp;
+              {collapse ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}
             </PopoverButton>
             <PopoverPanel
               transition

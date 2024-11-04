@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 // import { pages } from "../services/routes";
 import Image from "next/image";
@@ -6,8 +7,13 @@ import WBFHeaderLogo from "../assets/logo.webp";
 import { FaBagShopping } from "react-icons/fa6";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { FiMenu } from "react-icons/fi";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <header className="hidden w-full lg:flex justify-between px-1 py-2">
@@ -55,11 +61,6 @@ const Header = () => {
           <Link href="/promartialarts" className="mx-3">
             Pro Martial Arts
           </Link>
-          {/* {pages.map((pages) => (
-          <Link key={pages.id} href={pages.pageRoute} className="mx-2">
-            {pages.pageName}
-          </Link>
-        ))} */}
         </nav>
         <div className="flex items-center">
           <FaBagShopping className="mx-1 text-[20px]" />
@@ -76,7 +77,8 @@ const Header = () => {
           />
         </Link>
         <button>
-          <FiMenu className="text-white text-[30px]" />
+          <FiMenu className="text-white text-[30px]" onClick={handleShowMenu} />
+          {showMenu && <MobileMenu />}
         </button>
       </header>
     </>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import FooterLogo from "../assets/WORLD-BUSHIDO.png";
 import Link from "next/link";
 import { pages } from "../services/routes";
+import { socialMedia } from "../services/data";
 
 const Footer = () => {
   return (
@@ -33,6 +34,21 @@ const Footer = () => {
           <h4 className="text-lg">
             <strong>Social media</strong>
           </h4>
+          <nav className="flex flex-col text-left">
+            {socialMedia.map((socialMedia, index) => (
+              <Link
+                key={index}
+                href={socialMedia.socialMediaLink}
+                className="my-2"
+              >
+                <div className="flex items-center">
+                  {<socialMedia.socialMediaIcon />}
+                  &nbsp;&nbsp;
+                  {socialMedia.socialMediaName}
+                </div>
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
       <div className="w-full mt-10 text-center">

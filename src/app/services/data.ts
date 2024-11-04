@@ -2,6 +2,14 @@ import { Student } from "../models/types";
 import benefitIcon1 from "../assets/benefitIcon1.png";
 import benefitIcon2 from "../assets/benefitIcon2.png";
 import benefitIcon3 from "../assets/benefitIcon3.png";
+import { SocialMediaIcon } from "../models/interface";
+import { RiInstagramFill } from "react-icons/ri";
+import {
+  FaYoutube,
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaTiktok,
+} from "react-icons/fa";
 
 import Karate from "../assets/Karate.jpg";
 import Box from "../assets/Box.jpg";
@@ -245,5 +253,29 @@ export const students: Student[] = [
     trainingTime: "5 años",
     description:
       "Cinta Negra Hawaiian Kenpo, Instructor Kick Boxing, Campeon Centro Americano combate Continuo y puntos, Seleccionado Karate deportivo Honduras, Instructor para PRO MARTIAL ARTS, Campeon Nacional Kick Boxing, curso de Psicoterapia infatil",
+  },
+];
+
+export const socialMedia: SocialMediaIcon[] = [
+  {
+    socialMediaIcon: FaYoutube,
+    socialMediaLink: "https://youtube.com/@wbf_jb?si=2_WP_QlR8EjExF4t",
+    socialMediaName: "YouTube",
+  },
+  {
+    socialMediaIcon: FaFacebookSquare,
+    socialMediaLink:
+      "https://www.facebook.com/share/9F43K9v56Eb4aqA4/?mibextid=WC7FNe",
+    socialMediaName: "Facebook",
+  },
+  {
+    socialMediaIcon: RiInstagramFill,
+    socialMediaLink: "https://www.instagram.com/wbf_jb?igsh=OHFpNGdseWg1Y3R0",
+    socialMediaName: "Instagram",
+  },
+  {
+    socialMediaIcon: FaTiktok,
+    socialMediaLink: "https://www.tiktok.com/@wbf_jb?_t=8kA2RmqeHbB&_r=1",
+    socialMediaName: "TikTok",
   },
 ];

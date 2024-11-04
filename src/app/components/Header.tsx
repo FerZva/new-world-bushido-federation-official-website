@@ -30,7 +30,7 @@ const Header = () => {
           />
         </Link>
         <nav className="flex items-center">
-          <Popover __demoMode className="z-[100]">
+          <Popover className="z-[100]">
             <PopoverButton className="block text-white focus:outline-none data-[active]:text-white data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
               World Bushido Federation
             </PopoverButton>

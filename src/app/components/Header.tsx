@@ -92,7 +92,7 @@ const Header = () => {
         {/* Mobile Menu */}
         <div
           className={`flex justify-end flex-col fixed top-0 ${
-            showMenu ? "left-[321px]" : "left-[0px]"
+            showMenu ? "left-[200%]" : "left-[0px]"
           } w-full min-h-screen bg-slate-900/5 z-50 transition-all`}
         >
           <div className="w-90% min-h-screen bg-slate-900 px-1 py-2">

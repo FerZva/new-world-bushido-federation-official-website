@@ -1,5 +1,8 @@
 import React from "react";
 import LandingPageButton from "../components/LandingPageButton";
+import Image from "next/image";
+import WbfHondurasCoverPhoto from "../assets/wbfHonduras.jpg";
+
 const wbfhonduras = () => {
   return (
     <div className="w-full">
@@ -34,13 +37,60 @@ const wbfhonduras = () => {
         </p>
         <LandingPageButton linkTo="/membership" description="Start now" />
       </div>
-      <div>
-        <h3>Change your life</h3>
+      <div className="w-full h-auto">
+        <Image
+          src={WbfHondurasCoverPhoto}
+          alt="World Bushido Federation Cover Photo"
+          quality={80}
+          priority={true}
+          width={1500}
+          height={1000}
+          placeholder="blur"
+          className="w-full max-w-[1000px] m-auto mt-10 shadow-2xl shadow-rose-700"
+        />
       </div>
       <div>
-        <h3 className="font-extrabold px-1 md:px-4 text-[30px] lg:text-[60px]">
+        <h3 className="font-extrabold px-1 lg:px-2 md:px-4 text-[30px] lg:text-[60px]">
           Why World Bushido Federation?
         </h3>
+        <div className="flex flex-wrap justify-center">
+          <div className="max-w-[300px] flex flex-col bg-rose-700 p-4 mx-6 my-10">
+            <h4 className="text-[20px] font-extrabold mb-4">
+              Global Community and Cultural Exchange
+            </h4>
+            <p>
+              By joining the World Bushido Federation in Honduras, you become
+              part of a global network of martial artists, gaining access to
+              international events, seminars, and tournaments. Experience
+              cultural exchange, learn from top practitioners, and build
+              lifelong connections with martial artists around the world.
+            </p>
+          </div>
+          <div className="max-w-[300px] flex flex-col bg-rose-700 p-4 mx-6 my-10">
+            <h4 className="text-[20px] font-extrabold mb-4">
+              High-Quality Training Standards
+            </h4>
+            <p>
+              WBF Honduras is committed to upholding the highest standards of
+              martial arts training, emphasizing discipline, respect, and
+              self-development. Our certified instructors provide rigorous
+              training that blends traditional techniques with modern methods,
+              ensuring growth for all skill levels.
+            </p>
+          </div>
+          <div className="max-w-[300px] flex flex-col bg-rose-700 p-4 mx-6 my-10">
+            <h4 className="text-[20px] font-extrabold mb-4">
+              Focus on Personal Growth and Bushido Values
+            </h4>
+            <p>
+              At WBF Honduras, martial arts is more than physical training; it’s
+              a path to building character. We emphasize Bushido values—honor,
+              loyalty, and resilience—empowering members to develop both mental
+              and physical strength, which positively impacts every aspect of
+              life.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

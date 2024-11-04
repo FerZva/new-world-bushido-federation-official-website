@@ -8,7 +8,7 @@ const page = () => {
     <div className="w-full">
       <div className="flex flex-col justify-center">
         <div className=" text-center">
-          <h1 className="text-[80px] font-extrabold">
+          <h1 className="text-[40px] lg:text-[80px] font-extrabold">
             Products of World Bushido Federation
           </h1>
           <p>
@@ -19,7 +19,7 @@ const page = () => {
         </div>
         <div className="flex flex-wrap justify-center h-auto w-full">
           <div className="flex justify-start bg-rose-700 w-full max-w-[400px] text-left px-8 py-12 m-8">
-            <div className="grid content-between  text-left w-full min-w-[293px] max-w-[293px] min-h-[460px]">
+            <div className="grid content-between  text-left w-full md:min-w-[293px] max-w-[293px] min-h-[460px]">
               <div className="w-full flex justify-between mb-10">
                 <Image
                   width={300}
@@ -48,7 +48,7 @@ const page = () => {
           </div>
 
           <div className="flex flex-row justify-start bg-rose-700 w-full min-h-[467px] max-w-[400px] text-left px-8 py-12 m-8">
-            <div className="grid content-between text-left w-full min-w-[293px] max-w-[293px] min-h-[460px]">
+            <div className="grid content-between text-left w-full md:min-w-[293px] max-w-[293px] min-h-[460px]">
               <div className="w-full flex justify-between mb-10">
                 <Image
                   width={300}
@@ -78,7 +78,7 @@ const page = () => {
           </div>
 
           <div className="flex flex-row justify-start bg-rose-700 w-full min-h-[467px] max-w-[400px] text-left px-8 py-12 m-8">
-            <div className="grid content-between text-left w-full min-w-[293px] max-w-[293px] min-h-[460px]">
+            <div className="grid content-between text-left w-full md:min-w-[293px] max-w-[293px] min-h-[460px]">
               <div className="w-full flex justify-between mb-10">
                 <Image
                   width={300}
@@ -109,7 +109,7 @@ const page = () => {
           </div>
 
           <div className="flex flex-row justify-start bg-rose-700 w-full min-h-[467px] max-w-[400px] text-left px-8 py-12 m-8">
-            <div className="grid content-between text-left w-full min-w-[293px] max-w-[293px] min-h-[460px]">
+            <div className="grid content-between text-left w-full md:min-w-[293px] max-w-[293px] min-h-[460px]">
               <div className="w-full flex justify-between mb-10">
                 <Image
                   width={300}

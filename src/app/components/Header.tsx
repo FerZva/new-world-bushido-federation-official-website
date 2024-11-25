@@ -75,7 +75,7 @@ const Header = () => {
         <div className="flex items-center">
           <FaBagShopping className="mx-1 text-[20px]" />
           <button className="mx-1 ml-4 bg-rose-700 px-4 py-2 text-center">
-            Get Started
+            <Link href="/membership">Get Started</Link>
           </button>
         </div>
       </header>

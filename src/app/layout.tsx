@@ -1,26 +1,33 @@
-import type { Metadata } from "next";
+"use client";
 import Header from "./components/Header";
 import "./globals.css";
 import Footer from "./components/Footer";
-
-export const metadata: Metadata = {
-  title: "World Bushido Federation",
-  description: "The World Bushido Federation official website",
-};
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
   return (
     <html lang="en">
-      <body className="antialiased bg-slate-950 text-white w-full overflow-x-hidden">
-        <Header />
-        {/* <PageTransition logo="./assets/WORLD-BUSHIDO.png" /> */}
-        {children}
-        <Footer />
-      </body>
+      <AnimatePresence mode="wait">
+        <motion.body
+          className="antialiased bg-slate-950 text-white w-full overflow-x-hidden"
+          key={pathname}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Header />
+          {/* <PageTransition logo="./assets/WORLD-BUSHIDO.png" /> */}
+          {children}
+          <Footer />
+        </motion.body>
+      </AnimatePresence>
     </html>
   );
 }

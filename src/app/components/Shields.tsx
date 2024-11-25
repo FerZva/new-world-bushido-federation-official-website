@@ -12,7 +12,7 @@ const Shields = () => {
             OUR BADGES
           </h1>
         </div>
-        {ShieldsLogo.map((shield) => (
+        {ShieldsLogo.map((shield, index) => (
           <Image
             src={shield.shield}
             alt="Shield Logo"
@@ -20,6 +20,7 @@ const Shields = () => {
             height={150}
             placeholder="blur"
             className="m-4 filter grayscale"
+            key={index}
           />
         ))}
       </div>

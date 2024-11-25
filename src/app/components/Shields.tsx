@@ -48,6 +48,7 @@ const Shields = () => {
                         width={100}
                         height={100}
                         quality={100}
+                        placeholder="blur"
                         className="w-full max-w-[481.33px] max-h-[586.55px] filter grayscale object-cover"
                       />
                     </div>

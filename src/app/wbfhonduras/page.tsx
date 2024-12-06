@@ -69,7 +69,7 @@ const wbfhonduras = () => {
         />
       </div>
       <div>
-        <h3 className="font-extrabold px-1 lg:px-2 md:px-4 text-[30px] lg:text-[60px]">
+        <h3 className="font-extrabold px-1 lg:px-2 md:px-4 text-[30px] lg:text-[60px] text-center">
           Why World Bushido Federation?
         </h3>
         <div className="flex flex-wrap justify-center">

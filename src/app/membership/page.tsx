@@ -141,8 +141,8 @@ const page = () => {
         </div>
       </div>
       <div>
-        <div>Stocks Challenges</div>
-        <div>Stocks container</div>
+        {/* <div>Stocks Challenges</div>
+        <div>Stocks container</div> */}
       </div>
     </div>
   );

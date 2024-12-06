@@ -2,6 +2,8 @@ import React from "react";
 import LandingPageButton from "../components/LandingPageButton";
 import Image from "next/image";
 import WbfHondurasCoverPhoto from "../assets/wbfHonduras.jpg";
+import WBFLogo from "../assets/WORLD-BUSHIDO.png";
+import PMALogo from "../assets/proMartialArtsLogo.png";
 
 const wbfhonduras = () => {
   return (
@@ -36,6 +38,23 @@ const wbfhonduras = () => {
           the warrior’s path.
         </p>
         <LandingPageButton linkTo="/membership" description="Start now" />
+      </div>
+      <div className="w-full flex justify-center flex-col md:flex-row items-center my-20">
+        <Image
+          src={WBFLogo}
+          width={1000}
+          height={1000}
+          className="w-full max-w-[300px] max-h-[380px]"
+          alt="World Bushido Federation Logo"
+        />
+        <span className="text-[50px] font-extralight mx-10">X</span>
+        <Image
+          src={PMALogo}
+          width={1000}
+          height={1000}
+          className="w-full max-w-[400px] max-h-[200px]"
+          alt="Pro Martial Arts Logo"
+        />
       </div>
       <div className="w-full h-auto">
         <Image

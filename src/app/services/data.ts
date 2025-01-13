@@ -153,11 +153,11 @@ export const CommitteeMembers = [
     commiteName: "Dr. Simon Kook",
     description: "Global General Secretary",
   },
-  {
-    committeePicture: committee21,
-    commiteName: "Gilber Sandoval",
-    description: "International Director of Jiu-Jitsu",
-  },
+  // {
+  //   committeePicture: committee21,
+  //   commiteName: "Gilber Sandoval",
+  //   description: "International Director of Jiu-Jitsu",
+  // },
   {
     committeePicture: committee20,
     commiteName: "Sensei Fernando Velasquez",

@@ -52,7 +52,6 @@ import committee14 from "../assets/committee14.png";
 import committee15 from "../assets/committee15.jpeg";
 import committee19 from "../assets/committee19.jpg";
 import committee20 from "../assets/committee20.jpg";
-import committee21 from "../assets/committee2.jpg";
 
 import student1 from "../assets/student1.jpg";
 import student2 from "../assets/student2.jpg";

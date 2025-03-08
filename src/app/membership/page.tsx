@@ -31,7 +31,7 @@ const page = () => {
               </div>
               <h2 className="text-[30px] font-bold mb-4">Membership</h2>
               <div className="justify-start items-center text-left mb-8">
-                <h3 className="text-[50px] font-bold">45$</h3>
+                <h3 className="text-[50px] font-bold">85$</h3>
                 <label className="text-gray-400 text-[20px]">per annual</label>
               </div>
               <p className="mb-8">
@@ -39,7 +39,7 @@ const page = () => {
                 local conferences and stream. Validate your title worldwide
               </p>
               <Link
-                href="https://buy.stripe.com/8wM5lW2wLa0rgV2bJe"
+                href="https://buy.stripe.com/8wM3dOgnB0pR48gcOm"
                 className="min-w-full py-4 px-4 text-center text-white bg-slate-900 hover:bg-slate-800"
               >
                 Add to cart

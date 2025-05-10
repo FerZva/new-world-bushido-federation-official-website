@@ -170,7 +170,7 @@ export const CommitteeMembers = [
   {
     committeePicture: committe21,
     committeeName: "Sensei Al Urquidez",
-    description: "Counselor of Security at World Bushido Federation",
+    description: "Counselor of Security",
   },
   {
     committeePicture: committee22,

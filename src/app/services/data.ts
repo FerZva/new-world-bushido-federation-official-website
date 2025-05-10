@@ -52,6 +52,11 @@ import committee14 from "../assets/committee14.png";
 import committee15 from "../assets/committee15.jpeg";
 import committee19 from "../assets/committee19.jpg";
 import committee20 from "../assets/committee20.jpg";
+import committe21 from "../assets/committee21.jpg";
+import committee22 from "../assets/committee22.jpg";
+import committee23 from "../assets/committee23.jpg";
+import committee24 from "../assets/committee24.jpg";
+import committee25 from "../assets/committee25.jpg";
 
 import student1 from "../assets/student1.jpg";
 import student2 from "../assets/student2.jpg";
@@ -161,6 +166,31 @@ export const CommitteeMembers = [
     committeePicture: committee20,
     commiteName: "Sensei Fernando Velasquez",
     description: "President of World Bushido Federation Honduras",
+  },
+  {
+    committeePicture: committe21,
+    committeeName: "Sensei Al Urquidez",
+    description: "Counselor of Security at World Bushido Federation",
+  },
+  {
+    committeePicture: committee22,
+    commiteName: "Sensei Warfus Powell",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee23,
+    commiteName: "Si - Gung Angel Alberto Velásquez",
+    description: "",
+  },
+  {
+    committeePicture: committee24,
+    commiteName: "Sensei Mike Pecina",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee25,
+    commiteName: "Sensei Jason W. Walters",
+    description: "Sensei of World Bushido Federation",
   },
   {
     committeePicture: committee6,

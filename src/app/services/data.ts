@@ -149,8 +149,8 @@ interface CommitteeMembers {
 export const CommitteeMembers = [
   {
     committeePicture: committee3,
-    commiteName: "GM. Jorge A Borjas",
-    description: "Founder / President",
+    commiteName: "Sensei Jorge A Borjas",
+    description: "Ph.D Founder / CEO",
   },
   {
     committeePicture: Committee1,

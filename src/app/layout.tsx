@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function RootLayout({
   children,
@@ -26,6 +27,7 @@ export default function RootLayout({
           {/* <PageTransition logo="./assets/WORLD-BUSHIDO.png" /> */}
           {children}
           <Footer />
+          <Toaster />
         </motion.body>
       </AnimatePresence>
     </html>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { useCart } from "@/app/lib/cart";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Image from "next/image";
 import WBFHeaderLogo from "../assets/logo.webp";
@@ -10,6 +11,8 @@ import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 
 const Header = () => {
+  const { items } = useCart();
+  const quantity = items.reduce((sum, item) => sum + item.quantity, 0);
   const [showMenu, setShowMenu] = useState(true);
   const [collapse, setCollapse] = useState(true);
 
@@ -66,14 +69,21 @@ const Header = () => {
             </PopoverPanel>
           </Popover>
           <Link href="/membership" className="mx-3">
-            Memberships
+            Donations
           </Link>
           <Link href="/promartialarts" className="mx-3">
             Pro Martial Arts
           </Link>
         </nav>
         <div className="flex items-center">
-          <FaBagShopping className="mx-1 text-[20px]" />
+          <Link href="/cart" className="relative">
+            <FaBagShopping className="mx-1 text-[20px]" />
+            {quantity > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-xs px-1 rounded-full">
+                {quantity}
+              </span>
+            )}
+          </Link>
           <button className="mx-1 ml-4 bg-rose-700 px-4 py-2 text-center">
             <Link href="/membership">Get Started</Link>
           </button>
@@ -141,7 +151,7 @@ const Header = () => {
                 className="mb-2"
                 onClick={handleShowMenu}
               >
-                Memberships
+                Donations
               </Link>
               <Link
                 href="/promartialarts"

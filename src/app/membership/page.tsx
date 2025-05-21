@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { useCart } from "../lib/cart";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,7 @@ const products = [
   { id: 6, name: "$1000 Donation", price: 1000, image: "/WORLD-BUSHIDO.png" },
 ];
 
-const page = () => {
+const Page = () => {
   const { addToCart } = useCart();
   const { toast } = useToast();
 
@@ -32,7 +32,10 @@ const page = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 md:p-20">
           {products.map((product) => (
-            <div className="grid place-items-stretch relative h-64 bg-rose-700">
+            <div
+              key={product.id}
+              className="grid place-items-stretch relative h-64 bg-rose-700"
+            >
               <div className="p-4 h-full flex flex-col justify-between">
                 <div className="flex justify-between items-start">
                   <div>
@@ -215,4 +218,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -57,6 +57,19 @@ import committee22 from "../assets/committee22.jpg";
 import committee23 from "../assets/committee23.jpg";
 import committee24 from "../assets/committee24.jpg";
 import committee25 from "../assets/committee25.jpg";
+import committee26 from "../assets/committee26.jpg";
+import committee27 from "../assets/committee27.jpg";
+import committee28 from "../assets/committee28.jpg";
+import committee29 from "../assets/committee29.jpg";
+import committee30 from "../assets/committee30.jpg";
+import committee31 from "../assets/committee31.jpg";
+import committee32 from "../assets/committee32.jpg";
+import committee33 from "../assets/committee33.jpg";
+import committee34 from "../assets/committee34.jpg";
+import committee35 from "../assets/committee35.jpg";
+import committee36 from "../assets/committee36.jpg";
+import committee37 from "../assets/committee37.jpg";
+import committee38 from "../assets/committee38.jpg";
 
 import student1 from "../assets/student1.jpg";
 import student2 from "../assets/student2.jpg";
@@ -242,6 +255,71 @@ export const CommitteeMembers = [
     committeePicture: committee19,
     commiteName: "Hanshi GM Ray Torres",
     description: "founder of the Torres Hei Long System",
+  },
+  {
+    committeePicture: committee26,
+    commiteName: "Sensei Sky Benson",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee27,
+    commiteName: "Sensei Budo Rick",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee28,
+    commiteName: "Sensei John Kovacs",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee29,
+    commiteName: "Sensei Sid Rayford",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee30,
+    commiteName: "Sensei Ron White",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee31,
+    commiteName: "Sensei Bishop Jeffrey L Hollins",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee32,
+    commiteName: "Sensei John Adams",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee33,
+    commiteName: "Sensei Michael Jenkins",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee34,
+    commiteName: "Sensei Eric Peter Laino",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee35,
+    commiteName: "Sensei Steve Sigg",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee36,
+    commiteName: "Sensei Anthony Thomas",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee37,
+    commiteName: "Sensei Kris Adrian",
+    description: "Sensei of World Bushido Federation",
+  },
+  {
+    committeePicture: committee38,
+    commiteName: "Sensei Dale Jacoby",
+    description: "Sensei of World Bushido Federation",
   },
 ];
 

@@ -14,6 +14,7 @@ export default function CartPage() {
       const response = await axios.post("/api/checkout_sessions", {
         items,
         total: getTotal(),
+        email: "fernandzva2019@gmail.com",
       });
       window.location.href = response.data.sessionURL;
     } catch (error) {
